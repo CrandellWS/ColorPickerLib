@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
     Copyright (C) 2015 Martin Stone
 
     Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,26 +14,22 @@
     limitations under the License.
 -->
 
-<FrameLayout
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/thumbnail"
-    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="@dimen/preference_thumbnail_size"
     android:layout_height="@dimen/preference_thumbnail_size"
-    android:background="@drawable/thumbnail_border"
-    >
+    android:background="@drawable/thumbnail_border">
 
     <ImageView
-        android:layout_margin="1dp"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:src="@drawable/checker_background"
-        />
+        android:layout_margin="1dp"
+        android:src="@drawable/checker_background" />
 
     <View
-        android:layout_margin="1dp"
         android:id="@+id/colorPreview"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        />
+        android:layout_margin="1dp" />
 
 </FrameLayout>
