@@ -71,7 +71,7 @@ public class ColorPreference extends DialogPreference {
 	}
 
 	private View addThumbnail(View view) {
-		LinearLayout widgetFrameView = ((LinearLayout)view.findViewById(android.R.id.widget_frame));
+		final LinearLayout widgetFrameView = ((LinearLayout)view.findViewById(android.R.id.widget_frame));
 		widgetFrameView.setVisibility(View.VISIBLE);
 		widgetFrameView.removeAllViews();
 		LayoutInflater.from(getContext()).inflate(
