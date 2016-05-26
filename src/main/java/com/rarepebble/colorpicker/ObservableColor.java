@@ -30,7 +30,7 @@ class ObservableColor {
 	// Store as HSV & A, otherwise round-trip to int causes color drift.
 	private final float[] hsv = {0, 0, 0};
 	private int alpha;
-	private final List<Observer> observers = new ArrayList<Observer>();
+	private final List<Observer> observers = new ArrayList<>();
 
 	ObservableColor(int color) {
 		Color.colorToHSV(color, hsv);
